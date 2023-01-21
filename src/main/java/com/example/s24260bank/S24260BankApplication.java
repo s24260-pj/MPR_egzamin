@@ -18,21 +18,21 @@ public class S24260BankApplication {
 		this.clientService = clientService;
 		this.transactionService = transactionService;
 
-		Client registeredClient = this.clientService.registerClient(3, "Steve", "Working", 30.00);
-		Transaction transactionRegisteredUser = transactionService.doTransaction(registeredClient.getId(), 200.00);
-
-		System.out.println(transactionRegisteredUser);
-
-		Client client = this.clientService.getClientById(1);
-
-		Transaction transaction = transactionService.doTransaction(client.getId(), 200.00);
-
-		System.out.println(transaction.getActualClientBalance());
-
-		Transaction transaction1 = transactionService.doDepositMoneyTransaction(client.getId(), 400.00);
-
-		System.out.println(transaction1.getActualClientBalance());
-
-		System.out.println(client);
+//		Client registeredClient = this.clientService.registerClient(3, "Steve", "Working", 30.00);
+//		Transaction transactionRegisteredUser = transactionService.doTransaction(registeredClient.getId(), 200.00);
+//
+//		System.out.println(transactionRegisteredUser);
+//
+//		Client client = this.clientService.getClientById(1);
+//
+//		Transaction transaction = transactionService.doTransaction(client.getId(), 200.00);
+//
+//		System.out.println(transaction.getActualClientBalance());
+//
+//		Transaction transaction1 = transactionService.doDepositMoneyTransaction(client.getId(), 400.00);
+//
+//		System.out.println(transaction1.getActualClientBalance());
+//
+//		System.out.println(client);
 	}
 }
